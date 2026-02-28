@@ -1,0 +1,244 @@
+````md id="r8t2mz"
+# Estruturas de Repetição na Lógica de Programação
+
+As **estruturas de repetição** (ou laços de repetição) permitem executar um mesmo bloco de instruções várias vezes, enquanto uma condição for verdadeira ou por um número determinado de vezes.
+
+Elas são fundamentais para automatizar tarefas repetitivas e tornar os algoritmos mais eficientes.
+
+---
+
+# 📌 O que é uma Estrutura de Repetição?
+
+É um mecanismo que:
+
+- Repete um conjunto de instruções
+- Controla a repetição por meio de uma condição lógica ou contador
+- Evita a duplicação desnecessária de código
+
+---
+
+# 🔁 Por que usar repetição?
+
+Sem estruturas de repetição, precisaríamos escrever o mesmo comando várias vezes.
+
+Exemplo sem repetição:
+
+```text
+escrever "Olá"
+escrever "Olá"
+escrever "Olá"
+escrever "Olá"
+escrever "Olá"
+````
+
+Com repetição:
+
+```text
+repita 5 vezes
+    escrever "Olá"
+fim-repita
+```
+
+Mais simples, organizado e eficiente.
+
+---
+
+# 🔹 Principais Tipos de Estruturas de Repetição
+
+---
+
+## 1️⃣ Estrutura "PARA" (For)
+
+Utilizada quando sabemos exatamente quantas vezes o bloco deve ser executado.
+
+### 📌 Pseudocódigo
+
+```text
+para contador de 1 até 5 faça
+    ação
+fim-para
+```
+
+### 📌 Exemplo
+
+```text
+para i de 1 até 5 faça
+    escrever i
+fim-para
+```
+
+Resultado:
+
+```
+1
+2
+3
+4
+5
+```
+
+🔎 Característica principal:
+
+* Número de repetições conhecido.
+
+---
+
+## 2️⃣ Estrutura "ENQUANTO" (While)
+
+Executa o bloco enquanto uma condição for verdadeira.
+
+### 📌 Pseudocódigo
+
+```text
+enquanto condição faça
+    ação
+fim-enquanto
+```
+
+### 📌 Exemplo
+
+```text
+enquanto senha != "1234" faça
+    pedir senha
+fim-enquanto
+```
+
+🔎 Característica principal:
+
+* Número de repetições desconhecido.
+* Depende de condição lógica.
+
+---
+
+## 3️⃣ Estrutura "FAÇA-ENQUANTO" (Do-While)
+
+Executa o bloco pelo menos uma vez, e depois verifica a condição.
+
+### 📌 Pseudocódigo
+
+```text
+faça
+    ação
+enquanto condição
+```
+
+🔎 Diferença importante:
+
+* A verificação ocorre no final.
+* Garante execução mínima de uma vez.
+
+---
+
+# 🧠 Elementos Importantes nas Repetições
+
+---
+
+## 🔹 Variável de Controle
+
+É a variável que controla quantas vezes o laço será executado.
+
+Exemplo:
+
+```text
+i = 1
+enquanto i <= 5 faça
+    escrever i
+    i = i + 1
+fim-enquanto
+```
+
+---
+
+## 🔹 Condição de Parada
+
+Toda repetição precisa ter uma condição de parada.
+
+Sem isso, ocorre um:
+
+⚠️ **Loop infinito**
+
+Exemplo incorreto:
+
+```text
+enquanto verdadeiro faça
+    escrever "Erro"
+fim-enquanto
+```
+
+---
+
+# 🔄 Fluxo Lógico
+
+```text
+Início → Verifica condição → Executa bloco → Atualiza controle → Verifica novamente
+```
+
+---
+
+# 🎯 Exemplos Práticos
+
+---
+
+## 📌 Somar números de 1 a 5
+
+```text
+soma = 0
+
+para i de 1 até 5 faça
+    soma = soma + i
+fim-para
+
+escrever soma
+```
+
+---
+
+## 📌 Validação de entrada do usuário
+
+```text
+enquanto nota < 0 ou nota > 10 faça
+    pedir nova nota
+fim-enquanto
+```
+
+---
+
+# 📊 Comparação entre Estruturas
+
+| Estrutura     | Quando Usar                               |
+| ------------- | ----------------------------------------- |
+| PARA          | Quando o número de repetições é conhecido |
+| ENQUANTO      | Quando depende de condição                |
+| FAÇA-ENQUANTO | Quando precisa executar ao menos uma vez  |
+
+---
+
+# 🚀 Importância das Estruturas de Repetição
+
+Elas permitem:
+
+* Processar listas de dados
+* Validar entradas
+* Criar jogos
+* Automatizar tarefas
+* Implementar algoritmos matemáticos
+* Trabalhar com vetores e matrizes
+
+Sem repetição, programas seriam extensos e pouco eficientes.
+
+---
+
+# 📌 Conclusão
+
+As estruturas de repetição são fundamentais na lógica de programação, pois permitem automatizar tarefas, controlar fluxos de execução e tornar algoritmos mais dinâmicos e eficientes.
+
+Elas trabalham em conjunto com:
+
+* Variáveis
+* Operadores lógicos
+* Estruturas de decisão
+
+Sendo assim, constituem um dos pilares da programação estruturada.
+
+```
+```

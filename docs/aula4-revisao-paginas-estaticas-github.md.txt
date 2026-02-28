@@ -1,0 +1,244 @@
+```md id="g7n4xp"
+# Criação de Páginas Estáticas no GitHub (GitHub Pages)
+
+O **GitHub Pages** é um serviço gratuito do GitHub que permite hospedar **sites estáticos** diretamente a partir de um repositório.
+
+É ideal para:
+
+- Portfólios
+- Documentações
+- Landing pages
+- Projetos acadêmicos
+- Sites institucionais simples
+
+---
+
+# 📌 O que é uma Página Estática?
+
+Uma página estática é composta apenas por:
+
+- HTML
+- CSS
+- JavaScript (executado no navegador)
+
+Ela **não possui processamento no servidor** (como PHP ou banco de dados).
+
+---
+
+# 🚀 Formas de Criar uma Página Estática no GitHub
+
+Existem duas formas principais:
+
+---
+
+# 🔹 1. Publicar direto da branch `main`
+
+### ✅ Passo a passo
+
+## 1️⃣ Criar um repositório
+
+- Acesse o GitHub
+- Clique em **New repository**
+- Dê um nome ao projeto
+
+---
+
+## 2️⃣ Adicionar arquivos
+
+Crie pelo menos um arquivo:
+
+```
+
+index.html
+
+````
+
+Exemplo básico:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Site</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+</body>
+</html>
+````
+
+---
+
+## 3️⃣ Enviar os arquivos (push)
+
+```bash
+git add .
+git commit -m "Criação da página inicial"
+git push origin main
+```
+
+---
+
+## 4️⃣ Ativar o GitHub Pages
+
+No repositório:
+
+* Vá em **Settings**
+* Clique em **Pages**
+* Em "Source", selecione:
+
+  * Branch: `main`
+  * Pasta: `/ (root)`
+* Clique em **Save**
+
+---
+
+## 5️⃣ Acessar o site
+
+O GitHub irá gerar uma URL no formato:
+
+```
+https://seu-usuario.github.io/nome-do-repositorio/
+```
+
+---
+
+# 🔹 2. Usar repositório especial (site pessoal)
+
+Se o repositório tiver o nome:
+
+```
+seu-usuario.github.io
+```
+
+O site ficará disponível em:
+
+```
+https://seu-usuario.github.io
+```
+
+Nesse caso, não aparece o nome do repositório na URL.
+
+---
+
+# 📂 Estrutura Recomendada
+
+```
+/ (raiz)
+│
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+```
+
+---
+
+# 🎨 Personalização
+
+Você pode:
+
+* Criar múltiplas páginas
+* Usar CSS externo
+* Adicionar imagens
+* Utilizar frameworks como Bootstrap
+* Usar geradores estáticos (Jekyll, por exemplo)
+
+---
+
+# 🔄 Atualização do Site
+
+Sempre que fizer alterações:
+
+```bash
+git add .
+git commit -m "Atualização do site"
+git push origin main
+```
+
+O GitHub atualiza automaticamente em poucos minutos.
+
+---
+
+# 🧠 Boas Práticas
+
+## ✅ 1. Organizar os arquivos
+
+Separe:
+
+* HTML
+* CSS
+* JavaScript
+* Imagens
+
+---
+
+## ✅ 2. Usar nomes claros
+
+Evite:
+
+```
+arquivo1.html
+teste2.html
+```
+
+Prefira:
+
+```
+sobre.html
+contato.html
+portfolio.html
+```
+
+---
+
+## ✅ 3. Criar um README.md
+
+Explique:
+
+* Objetivo do projeto
+* Tecnologias usadas
+* Como visualizar localmente
+
+---
+
+## ✅ 4. Testar localmente antes do push
+
+Abra o `index.html` no navegador antes de publicar.
+
+---
+
+# ⚠️ Limitações do GitHub Pages
+
+* Não suporta backend
+* Não executa código no servidor
+* Sem banco de dados
+* Apenas conteúdo estático
+
+Para projetos dinâmicos, é necessário outro tipo de hospedagem.
+
+---
+
+# 📊 Fluxo Resumido
+
+```text
+Criar repositório → Adicionar index.html → Commit → Push → Ativar Pages → Publicar
+```
+
+---
+
+# 🎯 Conclusão
+
+O GitHub Pages é uma solução simples e gratuita para publicar páginas estáticas na internet.
+
+Ele permite:
+
+* Hospedagem rápida
+* Integração com Git
+* Versionamento do site
+* Atualizações automáticas
+
+É uma excelente ferramenta para iniciantes e para desenvolvedores que desejam publicar projetos de forma prática e profissional.
+
+```
+```
