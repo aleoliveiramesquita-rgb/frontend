@@ -1,0 +1,185 @@
+````md
+# Estruturas de Decisão na Lógica de Programação
+
+As **estruturas de decisão** são mecanismos que permitem que um algoritmo escolha diferentes caminhos de execução com base em condições lógicas. Elas tornam os programas inteligentes, pois possibilitam que o fluxo de execução varie conforme os dados de entrada.
+
+---
+
+## 📌 O que é uma Estrutura de Decisão?
+
+É uma construção lógica que avalia uma **condição** (expressão booleana) e executa um bloco de código apenas se essa condição for verdadeira ou falsa.
+
+Em lógica, toda decisão depende de uma **proposição lógica**, que resulta em:
+
+- `Verdadeiro (true)`
+- `Falso (false)`
+
+---
+
+## 🧠 Conceito Fundamental
+
+Uma estrutura de decisão funciona assim:
+
+> **Se** uma condição for verdadeira → execute uma ação  
+> **Caso contrário** → execute outra ação
+
+---
+
+## 🔹 Estrutura Simples (SE)
+
+Executa um bloco apenas se a condição for verdadeira.
+
+### 🔸 Pseudocódigo
+
+```text
+se condição então
+    faça algo
+fim-se
+````
+
+### 🔸 Exemplo
+
+```text
+se idade >= 18 então
+    escrever "Maior de idade"
+fim-se
+```
+
+Se a condição for falsa, nada acontece.
+
+---
+
+## 🔹 Estrutura Composta (SE / SENÃO)
+
+Permite dois caminhos possíveis.
+
+### 🔸 Pseudocódigo
+
+```text
+se condição então
+    ação A
+senão
+    ação B
+fim-se
+```
+
+### 🔸 Exemplo
+
+```text
+se nota >= 7 então
+    escrever "Aprovado"
+senão
+    escrever "Reprovado"
+fim-se
+```
+
+---
+
+## 🔹 Estrutura Encadeada (SE / SENÃO SE)
+
+Usada quando há múltiplas condições possíveis.
+
+### 🔸 Pseudocódigo
+
+```text
+se condição1 então
+    ação1
+senão se condição2 então
+    ação2
+senão
+    ação3
+fim-se
+```
+
+### 🔸 Exemplo
+
+```text
+se nota >= 9 então
+    escrever "Excelente"
+senão se nota >= 7 então
+    escrever "Aprovado"
+senão
+    escrever "Reprovado"
+fim-se
+```
+
+---
+
+## 🔍 Operadores Lógicos Utilizados
+
+As decisões normalmente utilizam operadores:
+
+### 🔹 Relacionais
+
+* `==` igual
+* `!=` diferente
+* `>` maior que
+* `<` menor que
+* `>=` maior ou igual
+* `<=` menor ou igual
+
+### 🔹 Lógicos
+
+* `E` (AND) → ambas condições devem ser verdadeiras
+* `OU` (OR) → pelo menos uma condição verdadeira
+* `NÃO` (NOT) → inverte o valor lógico
+
+### 🔸 Exemplo com operador lógico
+
+```text
+se idade >= 18 E possuiCNH então
+    escrever "Pode dirigir"
+fim-se
+```
+
+---
+
+## 🔄 Fluxo de Execução
+
+Sem decisão:
+
+```
+Início → Comando 1 → Comando 2 → Fim
+```
+
+Com decisão:
+
+```
+Início → Condição?
+              ↓
+        Verdadeiro → Ação A
+        Falso      → Ação B
+```
+
+---
+
+## 🎯 Importância das Estruturas de Decisão
+
+Elas permitem:
+
+* Validação de dados
+* Controle de acesso
+* Tomada de decisões automatizadas
+* Criação de regras de negócio
+* Desenvolvimento de jogos e sistemas interativos
+
+Sem estruturas de decisão, um programa executaria sempre as mesmas instruções, independentemente das situações.
+
+---
+
+## 📌 Resumo
+
+| Tipo          | Quando Usar             |
+| ------------- | ----------------------- |
+| SE            | Apenas uma condição     |
+| SE / SENÃO    | Dois caminhos possíveis |
+| SE / SENÃO SE | Múltiplas alternativas  |
+
+---
+
+## 🧩 Conclusão
+
+As estruturas de decisão são fundamentais na lógica de programação, pois permitem que algoritmos simulem o processo humano de tomada de decisão, analisando condições e escolhendo caminhos adequados para resolver problemas computacionais.
+
+```
+```
