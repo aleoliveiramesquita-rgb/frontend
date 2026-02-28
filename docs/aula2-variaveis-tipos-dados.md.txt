@@ -1,0 +1,152 @@
+```md
+# Variáveis e Tipos de Dados na Lógica de Programação
+
+Na lógica de programação, **variáveis** são espaços na memória utilizados para armazenar dados que podem ser manipulados ao longo da execução de um algoritmo. Cada variável possui um **tipo de dado**, que define quais valores ela pode armazenar e quais operações podem ser realizadas com ela.
+
+## 1. Conceito de Variável
+
+Uma variável é composta por:
+
+- **Nome (identificador)**: referência usada no código.
+- **Tipo de dado**: define a natureza do valor armazenado.
+- **Valor**: conteúdo atual armazenado na variável.
+
+Exemplo conceitual:
+
+```
+
+idade ← 25
+
+```
+
+Nesse caso:
+- `idade` é o nome da variável.
+- O valor `25` é um número inteiro.
+
+---
+
+## 2. Tipos de Dados Fundamentais
+
+Os principais tipos de dados na lógica de programação são:
+
+### 2.1 Inteiro (int)
+
+Armazena números sem casas decimais.
+
+```
+
+quantidade ← 10
+ano ← 2025
+
+```
+
+Usado para contagens, índices e valores discretos.
+
+---
+
+### 2.2 Real (float ou double)
+
+Armazena números com casas decimais.
+
+```
+
+salario ← 3500.75
+media ← 8.5
+
+```
+
+Usado em cálculos matemáticos que exigem precisão decimal.
+
+---
+
+### 2.3 Caractere (char)
+
+Armazena um único símbolo.
+
+```
+
+letra ← 'A'
+
+```
+
+---
+
+### 2.4 Cadeia de Caracteres (string)
+
+Armazena textos.
+
+```
+
+nome ← "Alessandra"
+mensagem ← "Bem-vinda à programação!"
+
+```
+
+---
+
+### 2.5 Lógico (boolean)
+
+Armazena valores verdadeiros ou falsos.
+
+```
+
+aprovado ← verdadeiro
+ativo ← falso
+
+```
+
+Esse tipo é fundamental em estruturas condicionais.
+
+---
+
+## 3. Aplicação Prática na Lógica
+
+Considere um algoritmo para calcular a média de um aluno:
+
+```
+
+nota1 ← 7.5
+nota2 ← 8.0
+media ← (nota1 + nota2) / 2
+
+aprovado ← media >= 7
+
+```
+
+### Análise:
+
+- `nota1` e `nota2` → tipo real
+- `media` → tipo real
+- `aprovado` → tipo boolean
+
+A variável `aprovado` armazenará:
+- `verdadeiro`, se a média for maior ou igual a 7
+- `falso`, caso contrário
+
+---
+
+## 4. Importância da Tipagem Correta
+
+Definir corretamente o tipo da variável é essencial porque:
+
+- Evita erros de execução.
+- Garante coerência lógica.
+- Melhora desempenho e organização do algoritmo.
+- Facilita a manutenção do código.
+
+Exemplo de erro lógico:
+
+```
+
+idade ← "vinte"
+
+```
+
+Se o programa precisar realizar um cálculo matemático com `idade`, ocorrerá erro, pois o tipo string não permite operações aritméticas.
+
+---
+
+## 5. Conclusão
+
+As variáveis são a base da estrutura lógica de qualquer programa. Ao compreender os tipos de dados e suas aplicações, o programador desenvolve algoritmos mais organizados, seguros e eficientes. A correta definição e manipulação das variáveis é um dos primeiros passos para a construção de sistemas computacionais robustos.
+```

@@ -1,0 +1,30 @@
+# Desenvolvimento Web Frontend
+
+O **desenvolvimento web frontend** é a área da programação responsável por tudo aquilo que o usuário vê e com o que interage em um site ou aplicação web. Ele envolve a construção da interface visual, a experiência do usuário (UX) e o comportamento dinâmico da página no navegador.
+
+---
+
+## 1. O que é Frontend?
+
+Frontend é a camada do sistema que roda no navegador do usuário. Seu principal objetivo é:
+
+- Exibir informações de forma clara e organizada.
+- Permitir interação com botões, formulários e menus.
+- Consumir dados do backend por meio de APIs.
+- Garantir boa experiência e responsividade.
+
+---
+
+## 2. Tecnologias Fundamentais
+
+O desenvolvimento frontend é baseado em três tecnologias principais:
+
+### 2.1 HTML (HyperText Markup Language)
+
+Responsável pela **estrutura** da página.
+
+Exemplo:
+
+```html
+<h1>Bem-vinda ao meu site</h1>
+<p>Este é um exemplo de frontend.</p>
