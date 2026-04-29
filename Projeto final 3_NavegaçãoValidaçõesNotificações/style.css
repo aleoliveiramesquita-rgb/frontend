@@ -1,0 +1,231 @@
+:root {
+  --cor-primaria: #4f46e5;
+  --cor-primaria-escura: #3730a3;
+  --cor-fundo: #f5f7fb;
+  --cor-superficie: #ffffff;
+  --cor-texto: #1f2937;
+  --cor-texto-suave: #6b7280;
+  --cor-borda: #d1d5db;
+  --cor-sucesso: #16a34a;
+  --cor-alerta: #dc2626;
+  --sombra: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --raio: 16px;
+  --espaco: 1rem;
+  --largura-max: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.5;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Notificações */
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.notificacao.sucesso {
+    background-color: #27ae60;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notificacao.erro {
+    background-color: #e74c3c;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Formulário */
+.form-tarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#input-tarefa {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#input-tarefa:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#btn-adicionar {
+    padding: 15px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#btn-adicionar:hover {
+    background-color: #2980b9;
+}
+
+#btn-adicionar:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Lista de tarefas */
+.lista-tarefas {
+    list-style: none;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+.tarefa:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarefa.concluida {
+    border-left-color: #27ae60;
+    background-color: #d5f4e6;
+}
+
+.tarefa-texto {
+    flex: 1;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tarefa.concluida .tarefa-texto {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
+
+.tarefa-acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-concluir, .btn-remover {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-concluir {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-concluir:hover {
+    background-color: #229954;
+}
+
+.btn-remover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-remover:hover {
+    background-color: #c0392b;
+}
+
+/* Mensagem quando vazia */
+.mensagem-vazia {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 40px 20px;
+    display: none;
+}
+
+.mensagem-vazia.visivel {
+    display: block;
+}

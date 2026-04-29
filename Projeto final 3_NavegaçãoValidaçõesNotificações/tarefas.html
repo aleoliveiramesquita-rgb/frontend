@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        
+        <!-- Área de notificações -->
+        <div id="notificacao" class="notificacao"></div>
+        
+        <!-- Formulário para adicionar tarefas -->
+        <form id="form-tarefa" class="form-tarefa">
+            <input 
+                type="text" 
+                id="input-tarefa" 
+                placeholder="Digite uma nova tarefa..." 
+                required
+            >
+            <button type="submit" id="btn-adicionar">
+                <span class="texto">Adicionar</span>
+                <span class="spinner" style="display: none;"></span>
+            </button>
+        </form>
+        
+        <!-- Lista de tarefas -->
+        <ul id="lista-tarefas" class="lista-tarefas"></ul>
+        
+        <!-- Mensagem quando não há tarefas -->
+        <div id="mensagem-vazia" class="mensagem-vazia">
+            Nenhuma tarefa adicionada ainda. Que tal começar?
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
